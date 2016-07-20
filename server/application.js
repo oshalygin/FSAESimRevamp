@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import express from "express";
+import path from "path";
 import bodyParser from "body-parser";
 import webpack from "webpack";
 import configuration from "../webpack.config.dev";
@@ -19,13 +20,16 @@ application.use(require("webpack-dev-middleware")(applicationCompiler, {
     noInfo: true,
     publicPath: configuration.output.publicPath
 }));
+
 application.use(require("webpack-hot-middleware")(applicationCompiler));
 
-application.get("/", (request, response) => {
-    response.send("Api welcome page");
+application.use('/api', router);
+
+application.get("*", (request, response) => {
+    let clientEntryPoint = path.join(__dirname, '../client/index.html');
+    response.sendFile(clientEntryPoint);
 });
 
-application.use('/api', router);
 
 application.listen(port, (error) => {
     if (!!error) {
