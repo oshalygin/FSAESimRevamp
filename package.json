@@ -4,7 +4,7 @@
   "description": "FSAESim Revamp",
   "main": "index.js",
   "scripts": {
-    "prestart": "babel-node ./utilities/startingDisplayMessage.js",
+    "prestart": "babel-node ./server/utilities/applicationStartMessage.js",
     "start": "npm-run-all --parallel open:server lint:watch",
     "open:server": "babel-watch ./server/application.js",
     "lint": "node_modules/.bin/esw webpack.config.* application server ./utilities",
