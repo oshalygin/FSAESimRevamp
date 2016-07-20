@@ -11,7 +11,7 @@
     "lint:watch": "npm run lint -- --watch",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "node_modules/.bin/rimraf ./dist",
-    "test": "NODE_ENV=test mocha --reporter spec utilities/testLoader.js \"application/**/*.spec.js\" \"server/**/*.spec.js\"",
+    "test": "NODE_ENV=test mocha --reporter spec utilities/testLoader.js \"client/**/*.spec.js\" \"server/**/*.spec.js\"",
     "test:watch": "npm run test -- --watch"
   },
   "repository": {
@@ -35,7 +35,15 @@
     "body-parser": "^1.15.2",
     "bootstrap": "3.3.6",
     "jquery": "2.2.3",
+    "jsx-loader": "^0.13.2",
     "mongoose": "^4.5.3",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
     "toastr": "2.1.2"
   },
   "devDependencies": {
