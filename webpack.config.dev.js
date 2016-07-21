@@ -10,7 +10,7 @@ export default {
     'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
     'webpack/hot/dev-server',
     'webpack-dev-server/client?http://localhost:8000/',
-    './server/index'
+    './client/index'
   ],
   target: 'web',
   output: {
@@ -19,7 +19,7 @@ export default {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './server'
+    contentBase: './client'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -28,6 +28,8 @@ export default {
   module: {
     loaders: [
       { test: /\.js$/, include: path.join(__dirname, 'server'), loaders: ['babel'] },
+      { test: /\.js$/, include: path.join(__dirname, 'client'), loaders: ['babel'] },
+      { test: /\.jsx$/, include: path.join(__dirname, 'client'), loader: 'babel', query: { presets: ['es2015', 'react'] } },
       { test: /(\.css)$/, loaders: ['style', 'css'] },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000' },
