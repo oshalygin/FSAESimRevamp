@@ -11,6 +11,7 @@ class Application extends React.Component {
         );
     }
 }
+
 Application.propTypes = {
     children: PropTypes.object.isRequired,
     loading: PropTypes.bool.isRequired
@@ -21,5 +22,6 @@ function mapStateToProps(state, ownProps) {
         loading: 0
     };
 }
+
 
 export default connect(mapStateToProps)(Application);
