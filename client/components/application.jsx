@@ -14,12 +14,12 @@ class Application extends React.Component {
 
 Application.propTypes = {
     children: PropTypes.object.isRequired,
-    loading: PropTypes.bool.isRequired
+    loading: PropTypes.bool
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-        loading: 0
+        loading: false
     };
 }
 
