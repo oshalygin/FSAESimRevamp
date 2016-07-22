@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
+import RaisedButton from 'material-ui/RaisedButton';
 
 class HomePage extends React.Component {
     render() {
         return (
-            <div className="jumbotron">
-                <h4>Landing Page</h4>
-                <p>FormulaSAE Lap Simulation</p>
-            </div>
+            <RaisedButton label="Wire Up" primary />
         );
     }
 }
