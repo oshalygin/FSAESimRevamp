@@ -8,8 +8,8 @@ export default {
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
-    'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:8000/',
+    // 'webpack/hot/dev-server',
+    // 'webpack-dev-server/client?http://localhost:8000/',
     './client/index'
   ],
   target: 'web',

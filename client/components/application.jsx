@@ -4,13 +4,13 @@ import { connect } from "react-redux";
 class Application extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container-fluid">
+                <h3>Application Component</h3>
                 {this.props.children}
             </div>
         );
     }
 }
-
 Application.propTypes = {
     children: PropTypes.object.isRequired,
     loading: PropTypes.bool.isRequired
