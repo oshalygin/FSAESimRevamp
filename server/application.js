@@ -24,6 +24,7 @@ application.use(require("webpack-dev-middleware")(applicationCompiler, {
 application.use(require("webpack-hot-middleware")(applicationCompiler));
 
 // application.use('/api', router);
+application.use('/client', express.static(path.join(__dirname, "../client")));
 
 application.get("*", (request, response) => {
     let clientEntryPoint = path.join(__dirname, '../client/index.html');

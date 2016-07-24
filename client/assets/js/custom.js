@@ -7,7 +7,7 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 
 	$(window).load(function () {
 		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow');
+		$('#preloader').delay(1000).fadeOut('slow');
 	});
 
 	$(document).ready(function () {
@@ -35,7 +35,7 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		 * Background image
 		/* ---------------------------------------------- */
 
-		$('#intro').backstretch(['../images/bg4.jpg']);
+		$('#intro').backstretch('./client/assets/images/main2.jpg');
 
 		/* ---------------------------------------------- /*
 		 * Navbar
@@ -66,26 +66,6 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 			}
 		});
 
-		// /* ---------------------------------------------- /*
-		//  * Count to
-		// /* ---------------------------------------------- */
-
-		// $('#stats').waypoint(function() {
-		// 	$('.timer').each(function() {
-		// 		counter = $(this).attr('data-count'),
-		// 		$(this).delay(6000).countTo({
-		// 			from: 0,
-		// 			to: counter,
-		// 			speed: 3000,// Stats Counter Speed
-		// 			refreshInterval: 50,
-		// 		});
-		// 	});
-		//  }, { offset: '70%', triggerOnce: true });
-
-		/* ---------------------------------------------- /*
-		 * WOW Animation When You Scroll
-		/* ---------------------------------------------- */
-		// var WOW = require("../../../node_modules/wowjs/dist/wow.js");
 		var wow = new WOW({
 			mobile: false
 		});
