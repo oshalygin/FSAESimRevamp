@@ -5,25 +5,25 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
+	$(window).load(function () {
 		$('#status').fadeOut();
 		$('#preloader').delay(350).fadeOut('slow');
 	});
 
-	$(document).ready(function() {
+	$(document).ready(function () {
 
 		$('body').scrollspy({
 			target: '.navbar-custom',
 			offset: 50
 		})
 
-		$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+		$(document).on('click', '.navbar-collapse.in', function (e) {
+			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
 				$(this).collapse('hide');
 			}
 		});
 
-		$('a[href*=#]').bind("click", function(e){
+		$('a[href*=#]').bind("click", function (e) {
 			var anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
@@ -35,7 +35,7 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		 * Background image
 		/* ---------------------------------------------- */
 
-		$('#intro').backstretch(['assets/images/bg4.jpg']);
+		$('#intro').backstretch(['../images/bg4.jpg']);
 
 		/* ---------------------------------------------- /*
 		 * Navbar
@@ -44,8 +44,8 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		var navbar = $('.navbar');
 		var navHeight = navbar.height();
 
-		$(window).scroll(function() {
-			if($(this).scrollTop() >= navHeight) {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() >= navHeight) {
 				navbar.addClass('navbar-color');
 			}
 			else {
@@ -53,12 +53,12 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 			}
 		});
 
-		if($(window).width() <= 767) {
+		if ($(window).width() <= 767) {
 			navbar.addClass('custom-collapse');
 		}
 
-		$(window).resize(function() {
-			if($(this).width() <= 767) {
+		$(window).resize(function () {
+			if ($(this).width() <= 767) {
 				navbar.addClass('custom-collapse');
 			}
 			else {
@@ -92,17 +92,6 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		wow.init();
 
 		/* ---------------------------------------------- /*
-		 * Owl slider
-		/* ---------------------------------------------- */
-
-		$("#owl-clients").owlCarousel({
-			items : 4,
-			slideSpeed : 300,
-			paginationSpeed : 400,
-			autoPlay: 5000
-		});
-
-		/* ---------------------------------------------- /*
 		 * Rotate
 		/* ---------------------------------------------- */
 
@@ -116,52 +105,7 @@ var wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		 * Contact form ajax
 		/* ---------------------------------------------- */
 
-		$("#contact-form").submit(function(e) {
 
-			e.preventDefault();
-
-			var c_name = $("#c_name").val();
-			var c_email = $("#c_email").val();
-			var c_message = $("#c_message ").val();
-			var responseMessage = $('.ajax-response');
-
-			if (( c_name== "" || c_email == "" || c_message == "") || (!isValidEmailAddress(c_email) )) {
-				responseMessage.fadeIn(500);
-				responseMessage.html('<i class="fa fa-warning"></i> Check all fields.');
-			}
-
-			else {
-				$.ajax({
-					type: "POST",
-					url: "assets/php/contactForm.php",
-					dataType: 'json',
-					data: {
-						c_email: c_email,
-						c_name: c_name,
-						c_message: c_message
-					},
-					beforeSend: function(result) {
-						$('#contact-form button').empty();
-						$('#contact-form button').append('<i class="fa fa-cog fa-spin"></i> Wait...');
-					},
-					success: function(result) {
-						if(result.sendstatus == 1) {
-							responseMessage.html(result.message);
-							responseMessage.fadeIn(500);
-							$('#contact-form').fadeOut(500);
-						} else {
-							$('#contact-form button').empty();
-							$('#contact-form button').append('<i class="fa fa-retweet"></i> Try again.');
-							responseMessage.html(result.message);
-							responseMessage.fadeIn(1000);
-						}
-					}
-				});
-			}
-
-			return false;
-
-		});
 
 	});
 
