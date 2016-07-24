@@ -1,36 +1,21 @@
-// import "../../node_modules/jquery/dist/jquery.min";
+import "./bootstrap/css/bootstrap.min.css"
+import "./css/owl.theme.css";
+import "./css/owl.carousel.css";
+import "./css/magnific-popup.css";
+import "./css/simpletextrotator.css";
+import "./css/font-awesome.min.css";
+import "./css/animate.css";
+import "./css/style.css";
 
-// import "../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css";
-// import "../../node_modules/font-awesome/css/font-awesome.min.css"
-// import "../../node_modules/toastr/build/toastr.min.css";
-// import "../../node_modules/flexslider/flexslider.css";
-// import "./css/styles.css";
-
-
-// import "../../node_modules/bootstrap/dist/js/bootstrap.min";
-// import "../../node_modules/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min";
-// import "./plugins/back-to-top";
-// import "../../node_modules/jquery-placeholder/jquery.placeholder";
-// // import "../../node_modules/fitvids/dist/fitvids.min";
-// import "../../node_modules/flexslider/jquery.flexslider-min";
-// import "./js/main";
-// import "./js/vimeo";
-
-
-// import "favicon.ico";
-
-// import "./plugins/bootstrap/css/bootstrap.min.css";
-// import "./plugins/font-awesome/css/font-awesome.css";
-// import "./plugins/flexslider/flexslider.css";
-// import "./css/styles.css";
-
-
-
-// import "./plugins/bootstrap/js/bootstrap.min.js";
-// import "./plugins/bootstrap-hover-dropdown.min.js";
-// import "./plugins/back-to-top.js";
-// import "./plugins/jquery-placeholder/jquery.placeholder.js";
-// import "./plugins/flexslider/jquery.flexslider-min.js";
-// import "./js/main.js";
-
-// import "http://a.vimeocdn.com/js/froogaloop2.min.js";
+// import "./js/jquery-1.11.0.min.js";
+import "./bootstrap/js/bootstrap.min.js";
+import "./js/jquery.backstretch.min.js";
+import "./js/owl.carousel.min.js";
+import "./js/jquery.magnific-popup.min.js";
+import "./js/jquery.simple-text-rotator.min.js";
+import "./js/jquery.waypoints.js";
+import "./js/jquery.countTo.js";
+import "./js/wow.min.js";
+import "./js/smoothscroll.js";
+import "./js/jquery.fitvids.js";
+import "./js/custom.js";

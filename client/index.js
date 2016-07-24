@@ -8,6 +8,7 @@ import "./styles/styles.css";
 import "../node_modules/bootstrap/dist/css/bootstrap-theme.min.css";
 import "../node_modules/toastr/build/toastr.min.css";
 
+import "./assets/assets";
 import Application from "./components/application.jsx";
 import HomePage from "./components/home/homePage.jsx";
 
