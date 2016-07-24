@@ -26,7 +26,7 @@ export default {
       $: "jquery",
       jQuery: "jquery",
       "windows.jQuery": "jquery",
-      "window.$" : "jquery"
+      "window.$": "jquery"
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
