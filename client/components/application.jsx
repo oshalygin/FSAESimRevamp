@@ -13,7 +13,7 @@ const muiTheme = getMuiTheme(theme);
 class Application extends React.Component {
     render() {
         return (
-            <div>
+            <div class="wrapper">
                 <PreLoader />
                 <NavigationBar />
                 <HomePage />
