@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "react-router";
-import RaisedButton from 'material-ui/RaisedButton';
+
+import Intro from "./intro.jsx";
 
 class HomePage extends React.Component {
     render() {
         return (
-            <RaisedButton label="Wire Up" primary />
+            <div>
+                <Intro />
+            </div>
         );
     }
 }

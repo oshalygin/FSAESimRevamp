@@ -4,17 +4,26 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import theme from "../styles/muiTheme.js";
 
+import PreLoader from "./common/preLoader.jsx";
+import NavigationBar from "./common/navigationBar.jsx";
+import HomePage from "./home/homePage.jsx";
+
 const muiTheme = getMuiTheme(theme);
 
 class Application extends React.Component {
     render() {
         return (
-            <MuiThemeProvider muiTheme={muiTheme}>
-                <div className="container-fluid">
-                    <h3>Application Component</h3>
-                    {this.props.children}
-                </div>
-            </MuiThemeProvider>
+            <div>
+                <PreLoader />
+                <NavigationBar />
+                <HomePage />
+                <MuiThemeProvider muiTheme={muiTheme}>
+                    <div className="container-fluid">
+                        <h3>Application Component</h3>
+                        {this.props.children}
+                    </div>
+                </MuiThemeProvider>
+            </div>
         );
     }
 }
