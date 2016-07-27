@@ -7,21 +7,21 @@ const Profile = () => {
                 <div className="row">
                     <div id="application"></div>
                     <div className="col-sm-4 wow bounceInLeft">
-                        <div className="profile-item">
+                        <div className="profile-item text-center">
                             <i className="fa fa-envelope-o"></i>
-                            <h5><a href="index.html#">markstone @some.com</a></h5>
+                            <h5><a href="index.html#">oshalygin@gmail.com</a></h5>
                         </div>
                     </div>
                     <div className="col-sm-4 wow bounceInUp">
-                        <div className="profile-item">
-                            <i className="fa fa-phone"></i>
-                            <h5>(1234) 1234-5678-1011</h5>
+                        <div className="profile-item text-center">
+                            <i className="fa fa-github"></i>
+                            <h5><a href="https://github.com/oshalygin/FSAESimRevamp">FSAESim Github Repository</a></h5>
                         </div>
                     </div>
                     <div className="col-sm-4 wow bounceInRight">
-                        <div className="profile-item">
-                            <i className="fa fa-map-marker"></i>
-                            <h5>144 Some Street, Some City, Some Country</h5>
+                        <div className="profile-item text-center">
+                            <i className="fa fa-cloud-download"></i>
+                            <h5>Download Source</h5>
                         </div>
                     </div>
                 </div>

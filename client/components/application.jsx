@@ -14,15 +14,15 @@ const muiTheme = getMuiTheme(theme);
 class Application extends React.Component {
     render() {
         return (
-
-
             <div>
                 <MuiThemeProvider muiTheme={muiTheme}>
-                    <div className="wrapper">
+                    <div>
                         <PreLoader />
-                        <NavigationBar />
-                        {this.props.children}
-                        <Footer />
+                        <div className="wrapper">
+                            <NavigationBar />
+                            {this.props.children}
+                            <Footer />
+                        </div>
                     </div>
                 </MuiThemeProvider>
             </div>

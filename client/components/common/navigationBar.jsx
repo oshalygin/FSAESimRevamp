@@ -13,16 +13,15 @@ const NavigationBar = () => {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="index.html#">FSAESim</a>
+                    <a className="navbar-brand" href="#">FSAESim</a>
                 </div>
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
-                        <li><a href="index.html#intro">home</a></li>
-                        <li><a href="index.html#profile">Profile</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#resume">Resume</a></li>
-                        <li><a href="index.html#portfolio">Portfolio</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#intro">home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,4 +30,6 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
+
 
