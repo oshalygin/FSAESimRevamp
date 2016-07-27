@@ -6,6 +6,8 @@ import SocialProfile from "./socialProfile.jsx";
 import Stats from "./stats.jsx";
 import Services from "./services.jsx";
 import Callout from "./callout.jsx";
+import Resume from "./resume.jsx";
+import Contact from "./contact.jsx";
 
 class HomePage extends React.Component {
     render() {
@@ -17,6 +19,8 @@ class HomePage extends React.Component {
                 <Stats />
                 <Services />
                 <Callout />
+                <Resume />
+                <Contact />
             </div>
         );
     }

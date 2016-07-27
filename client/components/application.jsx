@@ -6,6 +6,7 @@ import theme from "../styles/muiTheme.js";
 
 import PreLoader from "./common/preLoader.jsx";
 import NavigationBar from "./common/navigationBar.jsx";
+import Footer from "./common/footer.jsx";
 import HomePage from "./home/homePage.jsx";
 
 const muiTheme = getMuiTheme(theme);
@@ -13,14 +14,15 @@ const muiTheme = getMuiTheme(theme);
 class Application extends React.Component {
     render() {
         return (
-            <div class="wrapper">
-                <PreLoader />
-                <NavigationBar />
-                <HomePage />
+
+
+            <div>
                 <MuiThemeProvider muiTheme={muiTheme}>
-                    <div className="container-fluid">
-                        <h3>Application Component</h3>
+                    <div className="wrapper">
+                        <PreLoader />
+                        <NavigationBar />
                         {this.props.children}
+                        <Footer />
                     </div>
                 </MuiThemeProvider>
             </div>
