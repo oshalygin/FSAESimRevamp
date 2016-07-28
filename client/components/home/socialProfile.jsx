@@ -1,5 +1,5 @@
 import React from "react";
-import socialPhoto from "../../assets/images/photo.jpg";
+import socialPhoto from "../../assets/images/frontSlice.jpg";
 
 const SocialProfile = () => {
 
