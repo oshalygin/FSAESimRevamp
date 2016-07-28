@@ -4,7 +4,7 @@ import Intro from "./intro.jsx";
 import Profile from "./profile.jsx";
 import SocialProfile from "./socialProfile.jsx";
 import Stats from "./stats.jsx";
-import Services from "./services.jsx";
+import Features from "./features.jsx";
 import Callout from "./callout.jsx";
 import Resume from "./resume.jsx";
 import Contact from "./contact.jsx";
@@ -17,7 +17,7 @@ class HomePage extends React.Component {
                 <Profile />
                 <SocialProfile />
                 <Stats />
-                <Services />
+                <Features />
                 <Callout />
                 <Resume />
                 <Contact />
