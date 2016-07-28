@@ -1,6 +1,8 @@
 import React from "react";
+import socialPhoto from "../../assets/images/photo.jpg";
 
 const SocialProfile = () => {
+
     return (
         <section id="profile" className="section">
             <div className="container">
@@ -10,7 +12,7 @@ const SocialProfile = () => {
                         <p>Visual Designer.Front-end Developer.C# Programmer.</p>
                     </div>
                     <div className="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
-                        <img className="avatar" src="assets/images/photo.jpg" alt="" />
+                        <img className="avatar" src={socialPhoto} alt="" />
                     </div>
                     <div className="col-md-3 col-sm-6 wow bounceInUp">
                         <div className="profile-widget">
