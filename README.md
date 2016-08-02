@@ -1,7 +1,7 @@
 # <a href='#'>FormulaSAE Simulation</a>
 
 [![Build Status](https://travis-ci.org/oshalygin/FSAESimRevamp.svg?branch=master)](https://travis-ci.org/oshalygin/FSAESimRevamp)
-[![Coverage Status](https://coveralls.io/repos/github/oshalygin/FSAESimRevamp/badge.svg?branch=master)](https://coveralls.io/github/oshalygin/FSAESimRevamp?branch=master)
+[![Coverage Status](http://coveralls.io/repos/github/oshalygin/FSAESimRevamp/badge.svg?branch=master)](https://coveralls.io/github/oshalygin/FSAESimRevamp?branch=master)
 
 ####Major overhaul to FSAESim:
 
