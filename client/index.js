@@ -4,9 +4,21 @@ import { render } from "react-dom";
 import configureStore from "./store/configureStore.dev";
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
+import "../node_modules/material-design-lite/material.min.css";
 import "./styles/styles.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/css/bootstrap-theme.min.css";
 import "../node_modules/toastr/build/toastr.min.css";
+import "../node_modules/material-design-lite/material.min.js";
+import "./styles/material.icons.css";
+import "./styles/material.style.css";
+
+import "./images/favicon.ico";
+import "./images/apple-touch-icon.png";
+import "./images/favicon-16x16.png";
+import "./images/favicon-32x32.png";
+import "./images/mstile-150x150.png";
+import "./images/safari-pinned-tab.svg";
 
 import "./assets/assets";
 import Application from "./components/application.jsx";
