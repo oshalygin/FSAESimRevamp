@@ -3,7 +3,9 @@
   "dependencies": {},
   "globalDependencies": {
     "body-parser": "registry:dt/body-parser#0.0.0+20160619023215",
+    "cheerio": "registry:dt/cheerio#0.17.0+20160407085313",
     "debug": "registry:dt/debug#0.0.0+20160317120654",
+    "enzyme": "registry:dt/enzyme#2.4.1+20160709041153",
     "expect": "registry:dt/expect#1.13.4+20160316155526",
     "express": "registry:dt/express#4.0.0+20160708185218",
     "express-serve-static-core": "registry:dt/express-serve-static-core#4.0.0+20160715232503",
@@ -15,6 +17,7 @@
     "node": "registry:dt/node#6.0.0+20160709114037",
     "react": "registry:dt/react#0.14.0+20160630100702",
     "react-redux": "registry:dt/react-redux#4.4.0+20160720003245",
+    "react-router": "registry:dt/react-router#2.0.0+20160621215300",
     "redux": "registry:dt/redux#3.5.2+20160703092728",
     "serve-static": "registry:dt/serve-static#0.0.0+20160606155157",
     "sinon": "registry:dt/sinon#1.16.0+20160517064723",
