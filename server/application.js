@@ -13,7 +13,7 @@ let application = express();
 application.use(bodyParser.urlencoded({ extended: true }));
 application.use(bodyParser.json());
 
-let port = process.env.PORT || 8000; //eslint-disable-line no-process-env
+let port = process.env.PORT || 7000; //eslint-disable-line no-process-env
 
 const applicationCompiler = webpack(configuration);
 application.use(require("webpack-dev-middleware")(applicationCompiler, {
@@ -24,10 +24,10 @@ application.use(require("webpack-dev-middleware")(applicationCompiler, {
 application.use(require("webpack-hot-middleware")(applicationCompiler));
 
 // application.use('/api', router);
-application.use('/client', express.static(path.join(__dirname, "../client")));
+application.use("/client", express.static(path.join(__dirname, "../client")));
 
 application.get("*", (request, response) => {
-    let clientEntryPoint = path.join(__dirname, '../client/index.html');
+    let clientEntryPoint = path.join(__dirname, "../client/index.html");
     response.sendFile(clientEntryPoint);
 });
 

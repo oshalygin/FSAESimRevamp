@@ -11,4 +11,3 @@ import "./js/jquery.waypoints";
 import "../../node_modules/wowjs/dist/wow";
 import "../../node_modules/smoothscroll/smoothscroll.min";
 import "./js/custom";
-import "./images/icons/favicon.ico";

@@ -7,13 +7,13 @@ export default {
   devtool: "cheap-module-eval-source-map",
   noInfo: true,
   entry: [
-    "eventsource-polyfill", // necessary for hot reloading with IE
+    "eventsource-polyfill",
     "webpack-hot-middleware/client?reload=true",
     "./client/index"
   ],
   target: "web",
   output: {
-    path: __dirname + "/dist", // Note: Physical files are only output by the production build task `npm run build`.
+    path: __dirname + "/dist",
     publicPath: "/",
     filename: "bundle.js"
   },

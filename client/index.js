@@ -1,9 +1,10 @@
 import "babel-polyfill";
 import React from "react";
 import { render } from "react-dom";
-import configureStore from "./store/configureStore.dev";
+import configureStore from "./store/configureStore";
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
+
 import "../node_modules/material-design-lite/material.min.css";
 import "./styles/styles.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
