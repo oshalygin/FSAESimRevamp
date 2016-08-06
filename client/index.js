@@ -18,10 +18,8 @@ import "../node_modules/jquery.simple-text-rotator/jquery.simple-text-rotator.mi
 import "../node_modules/wowjs/dist/wow";
 import "../node_modules/smoothscroll/smoothscroll.min";
 
-
 import "./styles/material.icons.css";
 import "./styles/material.style.css";
-
 
 import "./images/favicon.ico";
 import "./images/apple-touch-icon.png";

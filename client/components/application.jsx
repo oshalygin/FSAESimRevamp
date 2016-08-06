@@ -7,7 +7,6 @@ import theme from "../styles/muiTheme.js";
 import PreLoader from "./common/preLoader.jsx";
 import NavigationBar from "./common/navigationBar.jsx";
 import Footer from "./common/footer.jsx";
-import HomePage from "./home/homePage.jsx";
 
 const muiTheme = getMuiTheme(theme);
 
@@ -35,7 +34,7 @@ Application.propTypes = {
     loading: PropTypes.bool
 };
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state, ownProps) { //eslint-disable-line no-unused-vars
     return {
         loading: false
     };

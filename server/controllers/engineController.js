@@ -1,11 +1,7 @@
-import express from "express";
+import express from "express"; //eslint-disable-line no-unused-vars
 import * as dataAccessApi from "../dataAccess/engineDataAccess";
 
 export default function engineController(dataAccess = dataAccessApi) {
-
-    return {
-        get
-    };
 
     function getById(request, response) {
         const engine = request.engine;
@@ -22,4 +18,9 @@ export default function engineController(dataAccess = dataAccessApi) {
             response.status(200).json(engines);
         });
     }
+
+    return {
+        get,
+        getById
+    };
 }
