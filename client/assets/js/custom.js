@@ -14,7 +14,7 @@ let wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		});
 
 		$(document).on("click", ".navbar-collapse.in", function (e) {
-			if ($(e.target).is("a") && $(e.target).attr("class") != "dropdown-toggle") {
+			if ($(e.target).is("a") && $(e.target).attr("class") !== "dropdown-toggle") {
 				$(this).collapse("hide");
 			}
 		});
@@ -47,8 +47,7 @@ let wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 		$(window).resize(function () {
 			if ($(this).width() <= 767) {
 				navbar.addClass("custom-collapse");
-			}
-			else {
+			} else {
 				navbar.removeClass("custom-collapse");
 			}
 		});

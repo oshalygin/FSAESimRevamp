@@ -1,7 +1,7 @@
 /**
  * Support: web-master72@yandex.ru;
  * Author: web-master72
- * 
+ *
  *
 /* ---------------------------------------------- /*
  * General styles
@@ -101,7 +101,7 @@ a,
 .progress,
 .form-control,
 .modal-content,
-.form-control:hover, 
+.form-control:hover,
 .form-control:focus {
 	-webkit-box-shadow: none;
 			box-shadow: none;
@@ -443,8 +443,8 @@ h3 > .fa {
 	color: #FFF !important;
 }
 
-.navbar-custom .nav li a:hover, 
-.navbar-custom .nav li a:focus, 
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
 	background: none;
 	outline: 0;
@@ -732,7 +732,7 @@ h3 > .fa {
 	left: 0;
 	margin: 0;
 	text-align: center;
-	top: 65%; 
+	top: 65%;
 }
 
 .status-mes h4 {
