@@ -1,4 +1,4 @@
-let wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
+let wowjs = require("../../node_modules/wowjs/dist/wow.min").WOW;
 
 (function ($, WOW) {
 
