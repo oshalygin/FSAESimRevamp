@@ -6,11 +6,13 @@ import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
 
 import "../node_modules/material-design-lite/material.min.css";
-import "./styles/styles.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/css/bootstrap-theme.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "../node_modules/toastr/build/toastr.min.css";
 import "../node_modules/material-design-lite/material.min.js";
+
 import "./styles/material.icons.css";
 import "./styles/material.style.css";
 

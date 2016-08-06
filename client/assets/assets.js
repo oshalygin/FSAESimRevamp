@@ -1,13 +1,11 @@
-import "./bootstrap/css/bootstrap.min.css"
 import "./css/simpletextrotator.css";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
 import "./css/animate.css";
 import "./css/style.css";
 import "../../node_modules/jquery/dist/jquery.min";
-import "./bootstrap/js/bootstrap.min";
 import "../../node_modules/jquery.backstretch/jquery.backstretch.min";
 import "../../node_modules/jquery.simple-text-rotator/jquery.simple-text-rotator.min";
-import "../../node_modules/waypoints/lib/jquery.waypoints.min";
+import "./js/jquery.waypoints";
 import "../../node_modules/wowjs/dist/wow";
 import "../../node_modules/smoothscroll/smoothscroll.min";
 import "./js/custom";
