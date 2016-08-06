@@ -19,8 +19,6 @@ import "../node_modules/wowjs/dist/wow";
 import "../node_modules/smoothscroll/smoothscroll.min";
 
 
-
-
 import "./styles/material.icons.css";
 import "./styles/material.style.css";
 

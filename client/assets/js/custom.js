@@ -27,7 +27,7 @@ let wowjs = require("../../../node_modules/wowjs/dist/wow").WOW;
 			e.preventDefault();
 		});
 
-		$("#intro").backstretch("./client/assets/images/main2.jpg");
+		$("#intro").backstretch("./client/images/main2.jpg");
 
 		const navbar = $(".navbar");
 		const navHeight = navbar.height();
