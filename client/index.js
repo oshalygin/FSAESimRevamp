@@ -22,6 +22,7 @@ import "../node_modules/smoothscroll/smoothscroll.min";
 import "./styles/material.icons.css";
 import "./styles/material.style.css";
 
+
 import "./images/favicon.ico";
 import "./images/apple-touch-icon.png";
 import "./images/favicon-16x16.png";
