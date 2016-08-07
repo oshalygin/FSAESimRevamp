@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+/* eslint-disable quotes */
 import fs from "fs";
 import cheerio from "cheerio";
 import colors from "colors"; //eslint-disable-line no-unused-vars
@@ -9,8 +10,11 @@ fs.readFile("client/index.html", "utf8", (error, markup) => {
     }
 
     const $ = cheerio.load(markup);
-    $("head").prepend('<link rel="stylesheet" href="material.icons.css">'); //eslint-disable-line quotes
-    $("head").prepend('<link rel="stylesheet" href="material.style.css">'); //eslint-disable-line quotes
+    $("head").prepend('<link rel="stylesheet" href="material.icons.css">');
+    $("head").prepend('<link rel="stylesheet" href="material.style.css">');
+    $("head").prepend('<link rel="stylesheet" href="simpletextrotator.css">');
+    $("head").prepend('<link rel="stylesheet" href="animate.css">');
+    $("head").prepend('<link rel="stylesheet" href="style.css">');
 
     fs.writeFile("dist/index.html", $.html(), "utf8", (writeError) => {
         if (writeError) {
