@@ -10,4 +10,4 @@ let Engine = new Schema({
     rpm: { type: [Number] }
 });
 
-export default mongoose.model('engine', Engine);
+export default mongoose.model("engine", Engine);

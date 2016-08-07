@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react";
 import { connect } from "react-redux";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import getMuiTheme from "material-ui/styles/getMuiTheme";
 import theme from "../styles/muiTheme.js";
 
 import PreLoader from "./common/preLoader.jsx";

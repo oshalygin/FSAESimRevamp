@@ -1,4 +1,5 @@
-process.env.NODE_ENV = "test";
+/* eslint-disable brace-style */
+process.env.NODE_ENV = "test"; //eslint-disable-line no-process-env
 require("babel-register")();
 
 require.extensions[".css"] = function () { return null; };

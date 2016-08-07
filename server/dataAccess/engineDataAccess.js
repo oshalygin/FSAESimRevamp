@@ -2,7 +2,7 @@
 import "./fsaeSimDb";
 import mongoose from "mongoose";
 import engineModel from "../models/engine";
-import colors from "colors";
+import colors from "colors"; //eslint-disable-line no-unused-vars
 mongoose.Promise = global.Promise;
 
 
