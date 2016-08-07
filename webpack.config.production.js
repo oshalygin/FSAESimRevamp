@@ -24,10 +24,19 @@ export default {
     contentBase: "./dist"
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "windows.jQuery": "jquery",
+      "window.$": "jquery"
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS),
     new ExtractTextPlugin("material.icons.css"),
     new ExtractTextPlugin("material.style.css"),
+    new ExtractTextPlugin("simpletextrotator.css"),
+    new ExtractTextPlugin("animate.css"),
+    new ExtractTextPlugin("style.css"),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin()
   ],
