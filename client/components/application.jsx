@@ -30,15 +30,7 @@ class Application extends React.Component {
 }
 
 Application.propTypes = {
-    children: PropTypes.object.isRequired,
-    loading: PropTypes.bool
+    children: PropTypes.object.isRequired
 };
 
-function mapStateToProps(state, ownProps) { //eslint-disable-line no-unused-vars
-    return {
-        loading: false
-    };
-}
-
-
-export default connect(mapStateToProps)(Application);
+export default connect()(Application);

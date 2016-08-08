@@ -18,8 +18,8 @@ const NavigationBar = () => {
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
                         <li><a href="#intro">home</a></li>
-                        <li><a href="#profile">Profile</a></li>
                         <li><a href="#features">Features</a></li>
+                        <li><a href="#progress">Progress</a></li>
                         <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>

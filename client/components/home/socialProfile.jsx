@@ -16,16 +16,20 @@ const SocialProfile = () => {
                     </div>
                     <div className="col-md-3 col-sm-6 wow bounceInUp">
                         <div className="profile-widget">
-                            <h3>Skillset</h3>
-                            <h5>UX Design</h5>
+                            <h3>Database/Backend</h3>
+                            <h5>FrontEnd Layout</h5>
                             <div className="skill-bar">
                                 <div className="skill-rate-on"></div>
                                 <div className="skill-rate-on"></div>
                                 <div className="skill-rate-on"></div>
                                 <div className="skill-rate-off"></div>
                             </div>
-                            <h5>HTML / CSS3 / SASS</h5>
+                            <h5>Simulation Calculations</h5>
                             <div className="skill-bar">
+                                <div className="skill-rate-on"></div>
+                                <div className="skill-rate-on"></div>
+                                <div className="skill-rate-on"></div>
+                                <div className="skill-rate-on"></div>
                                 <div className="skill-rate-on"></div>
                                 <div className="skill-rate-on"></div>
                                 <div className="skill-rate-off"></div>
