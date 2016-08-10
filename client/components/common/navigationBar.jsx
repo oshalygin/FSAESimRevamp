@@ -20,7 +20,6 @@ const NavigationBar = () => {
                         <li><a href="#intro">home</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#progress">Progress</a></li>
-                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>

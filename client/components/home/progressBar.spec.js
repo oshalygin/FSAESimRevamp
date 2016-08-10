@@ -12,14 +12,10 @@ describe("<ProgressBar />", () => {
 
         const progress = 8;
         const total = 10;
-
-        const expected = "<span><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div></span>";
+        const expected = 8;
 
         const {active} = currentProgress(progress, total);
-
-        const renderredOutput = shallow(active);
-        const actual = renderredOutput.html();
-
+        const actual = active.length;
         expect(actual).toEqual(expected);
 
     });
@@ -28,14 +24,10 @@ describe("<ProgressBar />", () => {
 
         const progress = 8;
         const total = 10;
-
-        const expected = "<span><div class=\"skill-rate-off\"></div><div class=\"skill-rate-off\"></div></span>";
-
+        const expected = 2;
         const {inactive} = currentProgress(progress, total);
 
-        const renderredOutput = shallow(inactive);
-        const actual = renderredOutput.html();
-
+        const actual = inactive.length;
         expect(actual).toEqual(expected);
 
     });
@@ -44,14 +36,10 @@ describe("<ProgressBar />", () => {
 
         const progress = 2;
         const total = 2;
-
-        const expected = "<span></span>";
-
+        const expected = 0;
         const {inactive} = currentProgress(progress, total);
 
-        const renderredOutput = shallow(inactive);
-        const actual = renderredOutput.html();
-
+        const actual = inactive.length;
         expect(actual).toEqual(expected);
 
     });
@@ -60,18 +48,29 @@ describe("<ProgressBar />", () => {
 
         const progress = 2;
         const total = 2;
-
-        const expected = "<span><div class=\"skill-rate-on\"></div><div class=\"skill-rate-on\"></div></span>";
+        const expected = 2;
 
         const {active} = currentProgress(progress, total);
-
-        const renderredOutput = shallow(active);
-        const actual = renderredOutput.html();
+        const actual = active.length;
 
         expect(actual).toEqual(expected);
 
     });
 
+    it("The second element of the renderred progress bar is a div with a class of skill-bar", () => {
+
+        const props = {
+            progress: 8,
+            total: 10
+        };
+
+        const expected = "skill-bar";
+
+        const renderredOutput = shallow(<ProgressBar {...props} />);
+        const actual = renderredOutput.children().get(1).props.className;
+        expect(actual).toEqual(expected);
+
+    });
 
 
 });

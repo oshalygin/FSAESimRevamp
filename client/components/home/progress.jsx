@@ -1,29 +1,28 @@
 import React from "react";
 import socialPhoto from "../../images/frontSlice.jpg";
+import ProgressBar from "./progressBar.jsx";
 
-const SocialProfile = () => {
+const Progress = () => {
 
     return (
-        <section id="profile" className="section">
+        <section id="progress" className="section">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 headline wow bounceInDown">
-                        <h2>FSAESim</h2>
-                        <p>Visual Designer.Front-end Developer.C# Programmer.</p>
+                        <h2>Development Progress</h2>
+                        <p>The current progress of the FSAE application and milestones</p>
                     </div>
                     <div className="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
                         <img className="avatar" src={socialPhoto} alt="" />
                     </div>
                     <div className="col-md-3 col-sm-6 wow bounceInUp">
                         <div className="profile-widget">
-                            <h3>Database/Backend</h3>
-                            <h5>FrontEnd Layout</h5>
-                            <div className="skill-bar">
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-off"></div>
-                            </div>
+
+                            <ProgressBar
+                                title = "FrontEnd"
+                                progress = {3}
+                                total = {10} />
+
                             <h5>Simulation Calculations</h5>
                             <div className="skill-bar">
                                 <div className="skill-rate-on"></div>
@@ -63,14 +62,9 @@ const SocialProfile = () => {
 
                     </div>
                     <div className="col-md-6 col-sm-12 wow bounceInRight">
-                        <h3>Profesional Profile</h3>
-                        <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls
-                            like mine.I am so happy, my dear friend.I am alone, and feel the charm of existence in this
-                            spot, which was created for the bliss of souls like mine.I am so happy, my dear friend.I am
-                            alone, and feel the charm of existence in this spot, which was created for the bliss of souls
-                            like mine.I am so happy, my dear friend.I am so happy, my dear friend.</p>
-                        <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls
-                            like mine.I am so happy, my dear friend.</p>
+                        <h3>FSAESim Progress</h3>
+                        <p>Obviously this project is a work in progress and as such there are a few bars to keep track of where we need the most development effort.  These are pseudo progress bars but they give a clear indication of where we stand.</p>
+                        <p>It is my goal to update the progress upon every milestone we hit!</p>
                     </div>
                 </div>
             </div>
@@ -78,4 +72,4 @@ const SocialProfile = () => {
     );
 };
 
-export default SocialProfile;
+export default Progress;

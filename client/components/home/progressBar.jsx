@@ -1,42 +1,39 @@
 import React, { PropTypes } from "react";
 
 export function currentProgress(progress, total = 10) {
-    const on = <div className="skill-rate-on"></div>;
-    const off = <div className="skill-rate-off"></div>;
     let active = [];
     let inactive = [];
 
     for (let i = 0; i < progress; i = i + 1) {
-        active.push(on);
+        active.push(<div className="skill-rate-on" key={Math.random(1000) }></div>);
     }
     for (let i = 0; i < total - progress; i = i + 1) {
-        inactive.push(off);
+        inactive.push(<div className="skill-rate-off" key={Math.random(1000) }></div>);
     }
 
-    active = (<span>{active}</span>);
-
-    inactive = <span>{inactive}</span>;
     return {
         active,
         inactive
     };
 }
 
-const ProgressBar = ({progress, total}) => {
-
+const ProgressBar = ({title, progress, total}) => {
     const {active, inactive} = currentProgress(progress, total);
-
     return (
-        <div className="skill-bar">
-            {active}
-            {inactive}
+        <div>
+            <h5>{title}</h5>
+            <div className="skill-bar">
+                {active}
+                {inactive}
+            </div>
         </div>
     );
 };
 
 ProgressBar.propTypes = {
+    title: PropTypes.string.isRequired,
     progress: PropTypes.number.isRequired,
-    total: PropTypes.number
+    total: PropTypes.number.isRequired
 };
 
 export default ProgressBar;
