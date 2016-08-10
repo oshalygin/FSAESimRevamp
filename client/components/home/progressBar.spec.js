@@ -60,6 +60,7 @@ describe("<ProgressBar />", () => {
     it("The second element of the renderred progress bar is a div with a class of skill-bar", () => {
 
         const props = {
+            title: "Stuff",
             progress: 8,
             total: 10
         };
