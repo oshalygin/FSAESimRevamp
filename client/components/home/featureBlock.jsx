@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropTypes } from "react";
 
 const FeatureBlock = ({icon, blockTitle, blockText}) => {
     return (
@@ -14,6 +14,12 @@ const FeatureBlock = ({icon, blockTitle, blockText}) => {
             </div>
         </div>
     );
+};
+
+FeatureBlock.propTypes = {
+    icon: PropTypes.string.isRequired,
+    blockTitle: PropTypes.string.isRequired,
+    blockText: PropTypes.string.isRequired
 };
 
 export default FeatureBlock;

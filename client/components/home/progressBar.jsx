@@ -1,14 +1,15 @@
 import React, { PropTypes } from "react";
+import uuid from "uuid";
 
 export function currentProgress(progress, total = 10) {
     let active = [];
     let inactive = [];
 
     for (let i = 0; i < progress; i = i + 1) {
-        active.push(<div className="skill-rate-on" key={Math.random(1000) }></div>);
+        active.push(<div className="skill-rate-on" key={uuid.v4()}></div>);
     }
     for (let i = 0; i < total - progress; i = i + 1) {
-        inactive.push(<div className="skill-rate-off" key={Math.random(1000) }></div>);
+        inactive.push(<div className="skill-rate-off" key={uuid.v4()}></div>);
     }
 
     return {

@@ -35,6 +35,7 @@ import "./styles/theme";
 
 import Application from "./components/application.jsx";
 import HomePage from "./components/home/homePage.jsx";
+import AnalysisPage from "./components/analysis/analysisPage.jsx";
 
 const store = configureStore();
 render(
@@ -44,6 +45,7 @@ render(
             <Route path="/" component={Application}>
                 <IndexRoute component={HomePage} />
                 <Route path="home" component={HomePage} />
+                <Route path="analysis" component={AnalysisPage} />
             </Route>
 
         </Router>

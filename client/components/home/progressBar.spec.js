@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable max-len */
 import expect from "expect";
 import { mount, shallow } from "enzyme";
 import TestUtils from "react-addons-test-utils";
