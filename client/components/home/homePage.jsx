@@ -1,7 +1,7 @@
 import React from "react";
 
 import Intro from "./intro.jsx";
-import Profile from "./profile.jsx";
+import SourceProfile from "./sourceProfile.jsx";
 import Progress from "./progress.jsx";
 import Features from "./features.jsx";
 import Contact from "./contact.jsx";
@@ -11,7 +11,7 @@ class HomePage extends React.Component {
         return (
             <div>
                 <Intro />
-                <Profile />
+                <SourceProfile />
                 <Features />
                 <Progress />
                 <Contact />

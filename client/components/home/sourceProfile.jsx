@@ -1,6 +1,6 @@
 import React from "react";
 
-const Profile = () => {
+const SourceProfile = () => {
     return (
         <section id="profile-contact">
             <div className="container">
@@ -30,4 +30,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default SourceProfile;
