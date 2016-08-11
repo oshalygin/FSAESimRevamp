@@ -19,51 +19,32 @@ const Progress = () => {
                         <div className="profile-widget">
 
                             <ProgressBar
-                                title = "FrontEnd"
+                                title = "React Front-End Application"
                                 progress = {3}
                                 total = {10} />
-
-                            <h5>Simulation Calculations</h5>
-                            <div className="skill-bar">
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-off"></div>
-                                <div className="skill-rate-off"></div>
-                            </div>
-                            <h5>Javascript</h5>
-                            <div className="skill-bar">
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-on"></div>
-                            </div>
-                            <h5>Ajax</h5>
-                            <div className="skill-bar">
-                                <div className="skill-rate-on"></div>
-                                <div className="skill-rate-off"></div>
-                                <div className="skill-rate-off"></div>
-                                <div className="skill-rate-off"></div>
-                            </div>
+                            <ProgressBar
+                                title = "Express Application"
+                                progress = {2}
+                                total = {10} />
+                            <ProgressBar
+                                title = "Database and Analytics"
+                                progress = {1}
+                                total = {10} />
+                            <ProgressBar
+                                title = "Simulation Accuracy"
+                                progress = {6}
+                                total = {10} />
+                            <ProgressBar
+                                title = "Visualizations"
+                                progress = {1}
+                                total = {10} />
                         </div>
 
-                        <div className="profile-widget">
-                            <h3>Social Profiles</h3>
-                            <ul className="widget-social">
-                                <li><a href="index.html#"><i className="fa fa-facebook fa-fw"></i></a></li>
-                                <li><a href="index.html#"><i className="fa fa-github-alt"></i></a></li>
-                                <li><a href="index.html#"><i className="fa fa-dribbble"></i></a></li>
-                                <li><a href="index.html#"><i className="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
 
                     </div>
                     <div className="col-md-6 col-sm-12 wow bounceInRight">
                         <h3>FSAESim Progress</h3>
-                        <p>Obviously this project is a work in progress and as such there are a few bars to keep track of where we need the most development effort.  These are pseudo progress bars but they give a clear indication of where we stand.</p>
+                        <p>Obviously this project is a work in progress and as such there are a few bars to keep track of where we need the most development effort.These are pseudo progress bars but they give a clear indication of where we stand.</p>
                         <p>It is my goal to update the progress upon every milestone we hit!</p>
                     </div>
                 </div>

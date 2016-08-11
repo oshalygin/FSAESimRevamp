@@ -21,7 +21,7 @@ const Profile = () => {
                     <div className="col-sm-4 wow bounceInRight">
                         <div className="profile-item text-center">
                             <i className="fa fa-cloud-download"></i>
-                            <h5>Download Source</h5>
+                            <h5><a href="https://github.com/oshalygin/FSAESimRevamp/archive/master.zip">Download Source</a></h5>
                         </div>
                     </div>
                 </div>
