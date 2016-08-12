@@ -1,6 +1,6 @@
 import {
     blue500, blue700,
-    pinkA200,
+    pinkA200, pink400,
     grey100, grey300, grey400, grey500,
     white, darkBlack, fullBlack
 } from "material-ui/styles/colors";
@@ -26,6 +26,10 @@ const muiTheme = {
         clockCircleColor: fade(darkBlack, 0.07),
         shadowColor: fullBlack
     }
+};
+
+export const colorPallet = {
+    pink: pink400
 };
 
 export default muiTheme;
