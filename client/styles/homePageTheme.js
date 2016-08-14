@@ -1,18 +1,7 @@
 let wowjs = require("../../node_modules/wowjs/dist/wow.min").WOW;
 
 (function ($, WOW) {
-
-	$(window).ready(function () {
-		$("#status").fadeOut();
-		$("#preloader").delay(1000).fadeOut("slow");
-	});
-
 	$(document).ready(function () {
-		$("body").scrollspy({
-			target: ".navbar-custom",
-			offset: 50
-		});
-
 		$(document).on("click", ".navbar-collapse.in", function (e) {
 			if ($(e.target).is("a") && $(e.target).attr("class") !== "dropdown-toggle") {
 				$(this).collapse("hide");
@@ -26,8 +15,6 @@ let wowjs = require("../../node_modules/wowjs/dist/wow.min").WOW;
 			}, 1000);
 			e.preventDefault();
 		});
-
-		$("#intro").backstretch("./client/images/main2.jpg");
 
 		const navbar = $(".navbar");
 		const navHeight = navbar.height();
