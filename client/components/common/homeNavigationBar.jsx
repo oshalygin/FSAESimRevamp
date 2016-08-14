@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 
-const NavigationBar = () => {
+const HomeNavigationBar = () => {
     return (
         <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div className="container">
@@ -30,7 +30,7 @@ const NavigationBar = () => {
     );
 };
 
-export default NavigationBar;
+export default HomeNavigationBar;
 
 
 

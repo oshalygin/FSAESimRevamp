@@ -2,7 +2,7 @@ let wowjs = require("../../node_modules/wowjs/dist/wow.min").WOW;
 
 (function ($, WOW) {
 
-	$(window).load(function () {
+	$(window).ready(function () {
 		$("#status").fadeOut();
 		$("#preloader").delay(1000).fadeOut("slow");
 	});

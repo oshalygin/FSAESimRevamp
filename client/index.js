@@ -31,7 +31,7 @@ import "./images/safari-pinned-tab.svg";
 import "./styles/simpletextrotator.css";
 import "./styles/animate.css";
 import "./styles/style.css";
-import "./styles/theme";
+
 
 import Application from "./components/application.jsx";
 import HomePage from "./components/home/homePage.jsx";
