@@ -20,7 +20,7 @@ const Intro = () => {
                             <h3><span className="rotate" style={rotatingTextStyle}>Lap Simulation | Oleg Shalygin | #JavaScript</span></h3>
                         </div>
                         <div className="mouse-icon">
-                            <div className="wheel"></div>
+                            <div className="wheel" />
                         </div>
                     </div>
                 </div>
