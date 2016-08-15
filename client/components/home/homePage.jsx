@@ -12,8 +12,6 @@ import "../../styles/homePageTheme.js";
 
 class HomePage extends React.Component {
     componentDidMount() {
-        jQuery("#status").fadeOut();
-		jQuery("#preloader").delay(1000).fadeOut("slow");
         jQuery("body").scrollspy({
 			target: ".navbar-custom",
 			offset: 50

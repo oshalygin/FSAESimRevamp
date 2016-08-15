@@ -31,6 +31,3 @@ const HomeNavigationBar = () => {
 };
 
 export default HomeNavigationBar;
-
-
-
