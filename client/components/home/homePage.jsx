@@ -1,7 +1,7 @@
 import React from "react";
 import jQuery from "jquery";
 
-import HomeNavigationBar from "../common/homeNavigationBar.jsx";
+import HomeNavigationBar from "./homeNavigationBar.jsx";
 import PreLoader from "../common/preLoader.jsx";
 import Intro from "./intro.jsx";
 import SourceProfile from "./sourceProfile.jsx";

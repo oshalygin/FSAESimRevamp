@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node utilities/applicationStartMessage.js",
-    "start": "npm-run-all --parallel open:server lint:watch",
+    "start": "npm-run-all --parallel open:server",
     "windows-start": "npm-run-all --parallel open-windows:server",
     "open:server": "babel-watch ./server/application.js",
     "open-windows:server": "babel-node ./server/application.js",
