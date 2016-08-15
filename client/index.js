@@ -36,6 +36,7 @@ import "./styles/style.css";
 import Application from "./components/application.jsx";
 import HomePage from "./components/home/homePage.jsx";
 import AnalysisPage from "./components/analysis/analysisPage.jsx";
+import SimulationPage from "./components/simulation/simulationPage.jsx";
 
 const store = configureStore();
 render(
@@ -46,6 +47,7 @@ render(
                 <IndexRoute component={HomePage} />
                 <Route path="home" component={HomePage} />
                 <Route path="analysis" component={AnalysisPage} />
+                <Route path="simulation" component={SimulationPage} />
             </Route>
 
         </Router>
