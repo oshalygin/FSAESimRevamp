@@ -5,7 +5,7 @@ const FeatureBlock = ({icon, blockTitle, blockText}) => {
         <div className="col-sm-4 wow bounceInLeft">
             <div className="service">
                 <div className="icon">
-                    <i className={icon}></i>
+                    <i className={icon} />
                 </div>
                 <h4>{blockTitle}</h4>
                 <div className="text">

@@ -6,10 +6,10 @@ export function currentProgress(progress, total = 10) {
     let inactive = [];
 
     for (let i = 0; i < progress; i = i + 1) {
-        active.push(<div className="skill-rate-on" key={uuid.v4()}></div>);
+        active.push(<div className="skill-rate-on" key={uuid.v4() } />);
     }
     for (let i = 0; i < total - progress; i = i + 1) {
-        inactive.push(<div className="skill-rate-off" key={uuid.v4()}></div>);
+        inactive.push(<div className="skill-rate-off" key={uuid.v4() } />);
     }
 
     return {

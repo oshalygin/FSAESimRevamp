@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from "react";
 import socialPhoto from "../../images/frontSlice.jpg";
 import ProgressBar from "./progressBar.jsx";
