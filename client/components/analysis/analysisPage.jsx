@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import PreLoader from "../common/preLoader.jsx";
 import NavigationBar from "../common/navigationBar.jsx";
+import Summary from "./summary.jsx";
 
 export class AnalysisPage extends React.Component {
     componentDidMount() {
@@ -14,7 +15,7 @@ export class AnalysisPage extends React.Component {
             <div>
                 <PreLoader />
                 <NavigationBar pathName ="analysis" />
-
+                <Summary />
             </div>
         );
     }
