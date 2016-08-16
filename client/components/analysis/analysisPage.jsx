@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+// import jQuery from "jquery";
 
 import PreLoader from "../common/preLoader.jsx";
 import NavigationBar from "../common/navigationBar.jsx";
