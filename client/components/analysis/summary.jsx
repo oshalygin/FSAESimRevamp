@@ -15,9 +15,13 @@ const Summary = () => {
                             <p>Formula SAE simulation software utilizes a large majority of vehicle parameters to simulate a vehicle going around a track.  The software was shown to have as little as 5% difference between the real world competition values and the output results.  Extensive research and fundamental vehicle dynamics were used to program each individual section of the simulation.</p>
 
                             <h5>Introduction and Background</h5>
+
                             <p>Engineering principles and fundamental equations are generally used to describe real world phenomena.  At an engineering competition such as Formula SAE, every decision should be made with an engineering basis.  As the old saying goes, "Can't argue with numbers".</p>
+
                             <p>The simulation software provides an unbiased and objective way to make top and low level decisions that will directly influence how the team does at the Formula SAE competition.  The rules of the FSAE competition are fairly complex and general conversations such as "more power is better" or "less weight is better" can be avoided.  For instance, more power will reduce the overall lap time, however,  it might increase fuel consumption to the point that the team scores poorly in the fuel economy event.  How much time is gained versus the amount of extra fuel used, is something that engineers should look at very closely when making decisions.  Another factor such as weight can often times bring down lap time, however, there is a chance that it will make the vehicle less reliable and prone to disqualification from the dynamic events.  The tradeoffs must be closely evaluated to the team's overall goals at the competition.</p>
-                            <p>Every successful FSAE school has some kind of vehicle simulation software that aids in the design process.  The degree of sophistication varies from school to school, but the underlying principle is the same, to do well at an engineering competition, the team needs to make engineering based decisions that provides hard facts as to which decision is more advantageous for the goals set.</p>
+
+                            <p>Every successful FSAE school has some kind of vehicle simulation software that aids in the design process.  The degree of sophistication varies from school to school, but the underlying principle is the same, to do well at an engineering competition, the team needs to make engineering based decisions that provides hard facts as to which decision is more advantageous for the goals set.
+                            </p>
 
                             <h6>Vehicle Parameter Input</h6>
                             <p>The parameters input by the user will influence all of the internal programming code that will simulate the vehicle dynamics.  As an example, the engine choice will influence the transmission ratios and the number of gears that the simulation processes.  The wheelbase, track width, and center of gravity will influence the weight transfer and acceleration characteristics.  Over 155 individual variables are used within the main simulation function that describes the performance of the vehicle.</p>
@@ -67,15 +71,19 @@ const Summary = () => {
                             <p>If the corner that the vehicle is approaching, has a higher velocity that it can achieve while accelerating, the cornering velocity is the average between the velocity at the end of the straight and the calculated maximum cornering velocity.</p>
 
                             <h6>Endurance</h6>
-                            <p>The endurance event, as outlined in the rules is 13.66 miles long.  The total distance of the 2011 track map is then analyzed at 0.733 miles.  To achieve the 13.66 mile long endurance track, it is estimated that there are 18.61686 laps that the program must simulate.  The total endurance time is recorded as:
-                            <br /><code>Total Endurance Time = Autocross Time * 18.6168</code>
-                            <br />A similar calculation is done for the total number of shifts.</p>
+                            <p>
+                                The endurance event, as outlined in the rules is 13.66 miles long.  The total distance of the 2011 track map is then analyzed at 0.733 miles.  To achieve the 13.66 mile long endurance track, it is estimated that there are 18.61686 laps that the program must simulate.  The total endurance time is recorded as:
+                                <br /><code>Total Endurance Time = Autocross Time * 18.6168</code>
+                                <br />A similar calculation is done for the total number of shifts.</p>
 
-                            <h6>Fuel Consumption</h6>
-                            <p>The instantaneous horsepower at each point of the straight sections was recorded.  The average horsepower is calculated based and recorded to be used in the fuel consumption equation as follows:
-                            <br /><code>Fuel Consumption Rate = BSFC * AverageHP</code>
-                            <br />The total fuel used in gallons is then calculated as:
-                            <br /><code>Total Fuel Used = Fuel Consumption Rate * Total Endurance Time</code></p>
+                                <h6>Fuel Consumption</h6>
+                                <p>The instantaneous horsepower at each point of the straight sections was recorded.  The average horsepower is calculated based and recorded to be used in the fuel consumption equation as follows:
+                                <br />
+                                <code>Fuel Consumption Rate = BSFC * AverageHP</code>
+                                <br />
+                                The total fuel used in gallons is then calculated as:
+                                <br /><code>Total Fuel Used = Fuel Consumption Rate * Total Endurance Time</code>
+                            </p>
 
                             <h5>References</h5>
                             <p>Gillespie, Thomas.  Fundamentals of Vehicle Dynamics.  Society of Automotive Engineers. (1992)
@@ -89,4 +97,4 @@ const Summary = () => {
     );
 };
 
-export default Summary;
+    export default Summary;
