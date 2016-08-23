@@ -15,7 +15,7 @@ export class AnalysisPage extends React.Component {
         return (
             <div>
                 <PreLoader />
-                <NavigationBar pathName ="analysis" />
+                <NavigationBar pathName ="analysis" offset={true} />
                 <Summary />
             </div>
         );

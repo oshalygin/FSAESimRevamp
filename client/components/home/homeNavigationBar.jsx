@@ -23,6 +23,7 @@ const HomeNavigationBar = () => {
                         <li><a href="#progress">Progress</a></li>
                         <li><Link to="analysis">Analysis</Link></li>
                         <li><Link to="simulation">Simulation</Link></li>
+                        <li><Link to="track">Track</Link></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
