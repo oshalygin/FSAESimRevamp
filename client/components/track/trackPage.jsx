@@ -1,14 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import trackMapImage from "../../images/trackMap.jpg";
-
 import PreLoader from "../common/preLoader.jsx";
 import NavigationBar from "../common/navigationBar.jsx";
 
 import TrackMap from "./trackMap.jsx";
-
-
 
 class TrackPage extends React.Component {
     render() {

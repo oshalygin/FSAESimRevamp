@@ -1,9 +1,10 @@
 import React from "react";
+import trackMapImage from "../../images/trackMap.jpg";
 
 const TrackMap = () => {
     return (
         <div className="col-md-12">
-            <img src={require("../../images/trackMap.jpg") } alt="FSAE 2011 Track Map" />
+            <img src={trackMapImage} alt="FSAE 2011 Track Map" />
         </div>
     );
 };
