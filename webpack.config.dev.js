@@ -48,7 +48,7 @@ export default {
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" },
       {test: /\.ico$/, loader: "file-loader?name=[name].[ext]"},
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|pdf)$/i,
         loaders: [
           "file?hash=sha512&digest=hex&name=[hash].[ext]",
           "image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false"

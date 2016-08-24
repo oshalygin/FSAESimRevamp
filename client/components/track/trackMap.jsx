@@ -1,11 +1,15 @@
 import React from "react";
 import trackMapImage from "../../images/trackMap.jpg";
+import trackMapToScalePDF from "../../images/fsae2011west.pdf";
+
 
 const TrackMap = () => {
     return (
-        <div className="col-md-12">
-            <img src={trackMapImage} alt="FSAE 2011 Track Map" />
-        </div>
+            <div style={{paddingBottom: 150}} className="col-md-12">
+                <a href={trackMapToScalePDF}>
+                    <img src={trackMapImage} alt="FSAE 2011 Track Map" />
+                </a>
+            </div>
     );
 };
 
