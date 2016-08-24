@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import PreLoader from "../common/preLoader.jsx";
 import NavigationBar from "../common/navigationBar.jsx";
 
+import VehicleParameters from "./vehicleParameters.jsx";
+
 export class SimulationPage extends React.Component {
     componentDidMount() {
 
@@ -13,8 +15,8 @@ export class SimulationPage extends React.Component {
         return (
             <div>
                 <PreLoader />
-                <NavigationBar pathName ="simulation" />
-
+                <NavigationBar pathName ="simulation" offset={true} />
+                <VehicleParameters />
             </div>
         );
     }

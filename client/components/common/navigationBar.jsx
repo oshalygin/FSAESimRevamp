@@ -12,7 +12,7 @@ export function setPath(pathName) {
 
 export function getBottomPadding(offset) {
     return !!offset
-        ? { paddingBottom: "50px" }
+        ? { paddingBottom: "100px" }
         : {};
 }
 
