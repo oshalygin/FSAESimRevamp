@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropTypes } from "react";
 import { connect } from "react-redux";
 
 import PreLoader from "../common/preLoader.jsx";
@@ -11,17 +11,24 @@ export class SimulationPage extends React.Component {
         super(props, context);
 
         this.state = {
-            vehicle: {}
+            vehicle: Object.assign({}, props.vehicle)
         };
 
-        this.onParameterSubmit.bind(this);
+        this.onVehicleParameterChange = this.onVehicleParameterChange.bind(this);
+        this.onParameterSubmit = this.onParameterSubmit.bind(this);
+
+    }
+
+    onVehicleParameterChange(event) {
+        const field = event.target.name;
+        let vehicle = this.state.vehicle;
+        vehicle[field] = event.target.value;
+        return this.setState({ vehicle: vehicle });
     }
 
     onParameterSubmit(event) {
         event.preventDefault();
-
-        const updatedVehicleParameters = event.target.value;
-        console.log(updatedVehicleParameters);
+        //Update the object from the state
     }
 
     componentDidMount() {
@@ -34,10 +41,33 @@ export class SimulationPage extends React.Component {
             <div>
                 <PreLoader />
                 <NavigationBar pathName ="simulation" offset={true} />
-                <VehicleParameters vehicle={vehicle} onSubmit={this.onParameterSubmit} />
+                <VehicleParameters
+                    vehicle={vehicle}
+                    onChange={this.onVehicleParameterChange}
+                    onSubmit={this.onParameterSubmit} />
             </div>
         );
     }
 }
 
-export default connect()(SimulationPage);
+SimulationPage.propTypes = {
+    vehicle: PropTypes.object.isRequired
+};
+
+function mapStateToProps() {
+    let vehicle = {
+        vehicleWeight: "",
+        forcedInduction: "",
+        liftDrag: "",
+        wheelbase: ""
+    };
+    return {
+        vehicle: vehicle
+    };
+}
+
+function mapDispatchToProps() {
+    return {};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SimulationPage);
