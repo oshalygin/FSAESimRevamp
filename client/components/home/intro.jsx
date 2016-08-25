@@ -1,5 +1,6 @@
 import React from "react";
-import { colorPallet } from "../../styles/muiTheme.js";
+import colorPallet from "../../styles/colorPallet";
+
 
 const headerStyle = {
     color: colorPallet.pink

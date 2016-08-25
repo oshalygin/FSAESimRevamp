@@ -10,7 +10,7 @@ const Summary = () => {
         <br/>
             <h4>Simulation Abstract</h4>
             <div>
-						<div>
+                <div>
 
                             <p>Formula SAE simulation software utilizes a large majority of vehicle parameters to simulate a vehicle going around a track.  The software was shown to have as little as 5% difference between the real world competition values and the output results.  Extensive research and fundamental vehicle dynamics were used to program each individual section of the simulation.</p>
 
@@ -97,4 +97,4 @@ const Summary = () => {
     );
 };
 
-    export default Summary;
+export default Summary;
