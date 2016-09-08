@@ -1,25 +1,28 @@
 import React, { PropTypes } from "react";
 
+import TextInput from "../common/textInput.jsx";
+
 const VehicleParameters = ({vehicle, onChange, onSubmit}) => {
     const styles = {
         button: {
-            margin: 12
+            margin: "12px"
         }
     };
-
     return (
-        <div className="container" style={{ paddingBottom: 150 }}>
+        <div className="container" id="simulation" style={{ paddingBottom: 150 }}>
             <form>
                 <div className="row">
                     <div className="col-md-12">
                         <div className="mdl-typography--headline">Vehicle Parameters</div>
                         <div className="row">
                             <div className="col-md-3">
-                                <input
-                                    value={vehicle.weight}
-                                    type="text"
+                                <TextInput
+                                    value={vehicle.vehicleWeight}
+                                    name="vehicleWeight"
+                                    label="Vehicle Weight"
+                                    pattern="[0-9]"
                                     onChange={onChange}
-                                    name="vehicleWeight" />
+                                    />
                             </div>
                             <div className="col-md-3">
                                 <input
